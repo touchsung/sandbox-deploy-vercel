@@ -5,10 +5,6 @@ on:
 jobs:
   generate-database-production:
     runs-on: ubuntu-latest
-
-    env:
-    DATABASE_URL_PROD: ${{ secrets.DATABASE_URL_PROD }}
-
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
