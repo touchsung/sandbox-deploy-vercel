@@ -9,8 +9,5 @@ datasource db {
 
 model User {
   email String @id @unique
-}
-
-model User2 {
-  email String @id @unique
+  role  String
 }

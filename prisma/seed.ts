@@ -17,6 +17,7 @@ async function main() {
       await prisma.user.create({
         data: {
           email,
+          role: "DT",
         },
       });
     }

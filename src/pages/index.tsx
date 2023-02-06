@@ -5,8 +5,8 @@ const Home = ({ result }: { result: [] }) => {
   return (
     <>
       <h2>TEST</h2>
-      {result.map((item: { email: string }, index) => {
-        return <p key={index}>{item?.email}</p>;
+      {result.map((item: { email: string; role: string }, index) => {
+        return <p key={index}>{`${item?.email} ${item.role}`}</p>;
       })}
     </>
   );
